@@ -1,0 +1,478 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+html {
+    font-size: 15px;
+    color: #54514C;
+}
+
+/* ヘッダー */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFF;
+}
+
+@media(max-width:768px){
+    header {
+        height: 60px;
+    }
+}
+
+header h1 a img {
+    width: 250px;
+    height: auto;
+    padding-left: 25px;
+}
+
+@media(max-width:768px) {
+    header h1 a img {
+        width: 200px;
+        padding-left: 15px;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
+
+header ul {
+    display: flex;
+    padding-right: 30px;
+}
+
+header ul li {
+    padding-left: 40px;
+}
+
+header ul li a {
+    color: #9c9b98;
+}
+
+/* トップ画像 */
+
+.top-img {
+    width: 100%;
+}
+
+.top-img img {
+    display: block;
+    padding-top: 80px;
+    width: 100%;
+    background-size: cover;
+}
+
+@media(max-width:768px) {
+    .top-img img {
+        padding-top: 60px;
+    }
+}
+
+/* メイン */
+
+.container {
+    margin: 30px 220px;
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+
+h2 {
+    width: 100%;
+    background-color: #B99566;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.information ul {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+@media(max-width:768px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    .information ul {
+        margin-bottom: 0;
+    }
+}
+
+.information li {
+    display: flex;
+    padding: 8px;
+}
+
+.information li:nth-child(even) {
+    background-color: #F5F3F1;
+}
+
+.information li time {
+    padding-right: 10px;
+}
+
+.information li p::before {
+    content: '▶︎';
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+@media(max-width:768px) {
+    .information li{
+        display: block;
+    }
+
+    .information li time {
+        font-size: 12px;
+    }
+
+    .information li p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .information li p::before {
+        margin-right: 2px;
+    }
+}
+
+
+.article-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    width: 49.5%;
+    margin: 10px 0;
+}
+
+@media(max-width:768px) {
+    .article-items {
+        display: block;
+    }
+
+    article{
+        width: 100%;
+    }
+}
+
+article img {
+    width: 100%;
+}
+
+.article-txt {
+    border-left: 4px solid #402805;
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.article-txt ul {
+    display: flex;
+    padding-left: 10px;
+}
+
+.article-txt ul li {
+    background-color: #B99566;
+    color: #FFF;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 8px 9px 5px 0;
+}
+
+article p {
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+article p::before {
+    content: '-';
+    padding-right: 5px;
+}
+
+@media(max-width:768px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    .article-txt ul li {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    article p {
+        font-size: 14px;
+        margin: 5px 0 30px 0;
+    }
+}
+
+
+/* フッター */
+
+footer nav {
+    background-color: #54514C;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul li {
+    width: 120px;
+    border: 1px solid #FFF;
+    margin: 0 15px;
+    border-radius: 2px;
+}
+
+footer ul li a {
+    display: block;
+    padding: 6px 0;
+    color: #FFF;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+footer ul li a:hover {
+    background-color: #FFF;
+    color: #54514C;
+}
+
+.footer-txt {
+    text-align: center;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 14%;
+    margin: 22px 0 15px 0;
+}
+
+.footer-txt small {
+    font-size: 0.8rem;
+}
+
+@media(max-width:768px) {
+
+
+    footer ul {
+        display: block;
+        padding: 12px 0;
+    }
+
+    footer ul li {
+        width: 240px;
+        margin: 10px auto;
+    }
+
+    .footer-txt{
+        height: 60px;
+    }
+
+    footer img {
+        width: 170px;
+        margin: 15px 0 10px 0;
+    }
+}
